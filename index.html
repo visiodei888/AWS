@@ -1,38 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>My Cloud Learning Journal</title>
 
-<style>
-body{
-  font-family: Arial;
-  margin:40px;
-}
-
-/* Tab buttons */
-.tab button{
-  background-color:#eee;
-  border:none;
-  padding:10px 20px;
-  cursor:pointer;
-  font-size:16px;
-}
-
-.tab button:hover{
-  background-color:#ccc;
-}
-
-/* Tab content */
-.tabcontent{
-  display:none;
-  margin-top:20px;
-}
-
-img{
-  width:400px;
-  margin-top:10px;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 <script>
 function openDay(dayName){
@@ -52,24 +24,46 @@ function openDay(dayName){
 
 <body>
 
-<h1>My Daily Cloud Learnings</h1>
-<p>Welcome! Here I document what I learn about cloud computing every day.</p>
-
-<div class="tab">
-  <button onclick="openDay('day1')">Day 1 - IAM</button>
-  <button onclick="openDay('day2')">Day 2 - EC2</button>
+<div class="header">
+<h1>☁️ My Cloud Learning Journal</h1>
+<p>Documenting my daily journey learning cloud computing</p>
 </div>
 
+<div class="tab">
+<button onclick="openDay('day1')">Day 1 - IAM</button>
+<button onclick="openDay('day2')">Day 2 - EC2</button>
+</div>
+
+<div class="container">
+
 <div id="day1" class="tabcontent">
-  <h2>Day 1 - AWS IAM</h2>
-  <img src="images/day1.png">
-  <p>Today I learned about IAM users, groups, and policies.</p>
+<div class="card">
+<h2>Day 1 - AWS IAM</h2>
+
+<img src="images/day1.png">
+
+<p>
+Today I learned about IAM users, groups, and policies.  
+IAM allows secure access control to AWS resources and is the foundation of cloud security.
+</p>
+
+</div>
 </div>
 
 <div id="day2" class="tabcontent">
-  <h2>Day 2 - AWS EC2</h2>
-  <img src="images/day2.png">
-  <p>Launched my first EC2 instance and connected using SSH.</p>
+<div class="card">
+<h2>Day 2 - AWS EC2</h2>
+
+<img src="images/day2.png">
+
+<p>
+Launched my first EC2 instance and connected using SSH.  
+EC2 provides scalable compute capacity in the cloud.
+</p>
+
+</div>
+</div>
+
 </div>
 
 </body>
