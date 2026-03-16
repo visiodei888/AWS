@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>My Cloud Learning Journal</title>
+<title>Cloudy But Learning</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -25,26 +25,33 @@ function openDay(dayName){
 <body>
 
 <div class="header">
-<h1>☁️ My Cloud Learning Journal</h1>
-<p>Documenting my daily journey learning cloud computing</p>
+<h1>☁️Cloudy But Learning</h1>
+<p>Hey all! Here I'm documenting my journey learning cloud computing. Feel free to browse through......</p>
 </div>
 
 <div class="tab">
-<button onclick="openDay('day1')">Day 1 - IAM</button>
-<button onclick="openDay('day2')">Day 2 - EC2</button>
+<button onclick="openDay('day1')">AWS Free Tier</button>
+<button onclick="openDay('day2')">AWS IAM</button>
 </div>
 
 <div class="container">
 
 <div id="day1" class="tabcontent">
 <div class="card">
-<h2>Day 1 - AWS IAM</h2>
+<h2>AWS Free Tier</h2>
 
-<img src="images/day1.png">
+<img src="images/day1.jpg">
 
 <p>
-Today I learned about IAM users, groups, and policies.  
-IAM allows secure access control to AWS resources and is the foundation of cloud security.
+Won’t I be charged from my bank account if I create an AWS account and provide my payment details? 🤔 
+
+I feel that when Amazon Web Services asks for bank or card details during signup, it discourages many people who are planning to explore the platform. A lot of beginners worry that money might get automatically deducted if they unknowingly use a paid service.
+
+Today, I signed up for the AWS Free Tier account, and honestly, I had the same apprehension. But I decided to go ahead with it anyway.
+
+From what I understood, AWS requires payment details mainly for identity verification and to prevent misuse of the platform. With the Free Tier, you get access to several services with usage limits that allow you to learn and experiment without cost (as long as you stay within those limits). You can access their free tier for 6 months, after which, your account will be closed automatically and your resources retained for 90 days. You can provide a credit card, debit card, or UPI during registration.
+
+So if this concern has been stopping you from creating an account and exploring cloud technologies - don’t let it hold you back. 😊
 </p>
 
 </div>
@@ -52,13 +59,26 @@ IAM allows secure access control to AWS resources and is the foundation of cloud
 
 <div id="day2" class="tabcontent">
 <div class="card">
-<h2>Day 2 - AWS EC2</h2>
+<h2>AWS IAM</h2>
 
-<img src="images/day2.png">
+<div class="image-gallery">
+  <img src="images/day2.png">
+  <img src="images/day2-2.png">
+  <img src="images/day2-3.png">
+</div>
 
 <p>
-Launched my first EC2 instance and connected using SSH.  
-EC2 provides scalable compute capacity in the cloud.
+As I started getting accustomed to the AWS Management Console, I spent some time practicing the components of AWS IAM (Identity and Access Management).
+
+I explored concepts such as:
+1) Users
+2) Groups
+3) Policies
+4) Roles
+
+I found the concepts of groups and policies particularly interesting. Creating groups, attaching policies (managed or custom), and then adding users to those groups seems extremely useful in large organizations. It simplifies permission management and saves a lot of time compared to assigning permissions individually.
+
+I’ve often heard the term Amazon EC2 mentioned alongside cloud computing, so I’m planning to explore that next.
 </p>
 
 </div>
