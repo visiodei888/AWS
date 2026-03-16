@@ -105,6 +105,59 @@ so I’m planning to explore that next.
 </div>
 </div>
 
+<div id="day3" class="tabcontent">
+<div class="card">
+<h2>AWS EC2</h2>
+
+<div class="image-gallery">
+  <img src="images/day3.jpg">
+  <img src="images/day3-2.jpg">
+  <img src="images/day3-3.jpg">
+  <img src="images/day3-4.jpg">
+  <img src="images/day3-5.jpg">
+  <img src="images/day3-6.jpg">
+</div>
+
+<p>
+What actually happens when someone says they “deployed Jenkins on the cloud”? 🤔 <br>
+I kinda did exactly this...Believe it or not, it is quite simple but also there is a little more to the story. Let me share what it...
+</p>
+
+<p>
+Imagine you want to set up a machine that automatically builds and tests your software whenever you need it. <br>
+But instead of installing it on your personal computer, you rent a computer somewhere on the internet that runs 24/7.
+</p>
+
+<div class="points">
+<div>👉 That rented computer is an EC2 instance</div>
+<div>👉 The platform providing the computer is AWS</div>
+<div>👉 And the automation tool you install on it is Jenkins</div>
+</div>
+
+<p>
+So the process is basically: <br>
+Rent a computer → log into it → install the required tools → open access so others can reach it.
+</p>
+
+<p><b>Here comes the technical part of what I did:</b></p>
+
+<div class="steps">
+<div>1) Launched an EC2 instance (configured the name, OS – Ubuntu, instance type – t2.micro, key pair login)</div>
+<div>2) Had to install MobaXterm to SSH into my EC2 instance, then updated it</div>
+<div>3) Installed Java JDK v17 before installing Jenkins</div>
+<div>4) Tried to access Jenkins from outside AWS using the EC2 public IP address through port 8080 and failed miserably due to security reasons</div>
+<div>5) Configured the security inbound rules of my EC2 instance to allow access through 8080</div>
+<div>6) Successfully deployed Jenkins on AWS and accessed it from outside AWS.</div>
+</div>
+
+<p>
+So, I learnt a bunch of new stuff while deploying Jenkins on AWS – the kind of things you only really understand once you try doing it yourself.
+</p>
+
+
+</div>
+</div>
+
 </div>
 
 </body>
